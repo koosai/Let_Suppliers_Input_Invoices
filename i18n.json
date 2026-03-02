@@ -1,0 +1,47 @@
+{
+  "en": {
+    "title": "Invoice Upload",
+    "language": "Language",
+    "employee_name": "Employee Name",
+    "employee_email": "Employee Email",
+    "invoice_no": "Invoice Number",
+    "invoice_file": "Invoice PDF",
+    "submit": "Submit",
+    "required": "This field is required.",
+    "invalid_email": "Please enter a valid email address.",
+    "invalid_pdf": "Please upload a PDF file.",
+    "upload_failed": "Upload failed. Please try again.",
+    "invoice_exists": "Invoice already exists.",
+    "success": "Upload successful. ID: {id}, File: {saved_filename}"
+  },
+  "tr": {
+    "title": "Fatura Yükleme",
+    "language": "Dil",
+    "employee_name": "Çalışan Adı",
+    "employee_email": "Çalışan E-postası",
+    "invoice_no": "Fatura Numarası",
+    "invoice_file": "Fatura PDF",
+    "submit": "Gönder",
+    "required": "Bu alan zorunludur.",
+    "invalid_email": "Lütfen geçerli bir e-posta adresi girin.",
+    "invalid_pdf": "Lütfen bir PDF dosyası yükleyin.",
+    "upload_failed": "Yükleme başarısız oldu. Lütfen tekrar deneyin.",
+    "invoice_exists": "Fatura zaten mevcut.",
+    "success": "Yükleme başarılı. Kimlik: {id}, Dosya: {saved_filename}"
+  },
+  "zh": {
+    "title": "发票上传",
+    "language": "语言",
+    "employee_name": "员工姓名",
+    "employee_email": "员工邮箱",
+    "invoice_no": "发票编号",
+    "invoice_file": "发票 PDF",
+    "submit": "提交",
+    "required": "此字段为必填项。",
+    "invalid_email": "请输入有效的邮箱地址。",
+    "invalid_pdf": "请上传 PDF 文件。",
+    "upload_failed": "上传失败，请重试。",
+    "invoice_exists": "发票已存在。",
+    "success": "上传成功。ID: {id}，文件: {saved_filename}"
+  }
+}
