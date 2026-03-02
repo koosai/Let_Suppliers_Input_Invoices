@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Upload</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1 id="page-title"></h1>
+        <div class="language-switcher">
+          <label for="language-select" id="language-label"></label>
+          <select id="language-select" aria-label="Language selector">
+            <option value="en">English</option>
+            <option value="tr">Türkçe</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+      </header>
+
+      <form id="invoice-form" novalidate>
+        <div class="form-field">
+          <label for="employee_name" id="label-employee_name"></label>
+          <input id="employee_name" name="employee_name" type="text" required />
+          <p class="error" id="error-employee_name" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="employee_email" id="label-employee_email"></label>
+          <input id="employee_email" name="employee_email" type="email" required />
+          <p class="error" id="error-employee_email" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="invoice_no" id="label-invoice_no"></label>
+          <input id="invoice_no" name="invoice_no" type="text" required />
+          <p class="error" id="error-invoice_no" aria-live="polite"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="invoice_file" id="label-invoice_file"></label>
+          <input id="invoice_file" name="invoice_file" type="file" accept="application/pdf,.pdf" required />
+          <p class="error" id="error-invoice_file" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" id="submit-btn"></button>
+      </form>
+
+      <section class="message-panel" aria-live="polite">
+        <p class="success" id="success-message"></p>
+        <p class="error" id="server-error"></p>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
