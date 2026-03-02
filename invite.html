@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin • Send Invite</title>
+    <link rel="stylesheet" href="/admin-layout.css" />
+  </head>
+  <body>
+    <header id="admin-header"></header>
+    <nav id="admin-nav"></nav>
+
+    <main class="admin-content" aria-labelledby="invite-title">
+      <section class="admin-card">
+        <h1 id="invite-title">Send customer invite</h1>
+        <form id="invite-form" novalidate>
+          <div class="form-row">
+            <label for="customer-email">Customer email</label>
+            <input
+              id="customer-email"
+              name="customer_email"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="customer@example.com"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="lang">Email language template</label>
+            <select id="lang" name="lang" required>
+              <option value="EN">EN</option>
+              <option value="TR">TR</option>
+              <option value="中文">中文</option>
+            </select>
+          </div>
+
+          <button id="send-button" type="submit">Send</button>
+        </form>
+
+        <p id="status-area" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/admin-common.js"></script>
+    <script src="/invite.js" defer></script>
+  </body>
+</html>
