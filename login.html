@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="admin-layout.css" />
+</head>
+<body class="admin-login-page">
+  <main class="login-shell">
+    <section class="login-card" aria-labelledby="login-title">
+      <h1 id="login-title">Admin Portal</h1>
+      <p class="login-subtitle">Sign in to continue.</p>
+
+      <form id="admin-login-form" class="admin-form" novalidate>
+        <label class="field-group" for="username">
+          <span>Username</span>
+          <input id="username" name="username" type="text" autocomplete="username" required />
+        </label>
+
+        <label class="field-group" for="password">
+          <span>Password</span>
+          <input id="password" name="password" type="password" autocomplete="current-password" required />
+        </label>
+
+        <p id="login-error" class="form-message" role="alert" aria-live="polite"></p>
+
+        <button id="login-button" class="btn-primary" type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="admin-common.js" defer></script>
+</body>
+</html>

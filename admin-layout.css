@@ -1,0 +1,164 @@
+:root {
+  --bg: #f3f6fb;
+  --surface: #ffffff;
+  --border: #d9e1ea;
+  --text: #142235;
+  --muted: #5f6f82;
+  --primary: #0c5fc6;
+  --primary-dark: #0a4d9f;
+  --danger: #b42318;
+  --shadow: 0 12px 28px rgba(16, 33, 57, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.admin-header {
+  height: 64px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin-header__inner {
+  width: min(1120px, calc(100% - 48px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-brand {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.admin-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-nav a,
+.admin-nav button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.admin-nav a:hover,
+.admin-nav button:hover,
+.admin-nav a:focus-visible,
+.admin-nav button:focus-visible {
+  color: var(--text);
+  background: #ebf2fd;
+  outline: none;
+}
+
+main {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 28px 0;
+}
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-shell {
+  width: min(460px, calc(100% - 40px));
+}
+
+.login-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 34px;
+  box-shadow: var(--shadow);
+}
+
+.login-card h1 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.login-subtitle {
+  color: var(--muted);
+  margin: 10px 0 24px;
+}
+
+.admin-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field-group {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.field-group input {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.field-group input:focus {
+  outline: 2px solid #bfd9ff;
+  border-color: var(--primary);
+}
+
+.btn-primary {
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--primary-dark);
+  outline: none;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.form-message {
+  min-height: 1.2em;
+  color: var(--danger);
+  margin: 0;
+  font-size: 0.92rem;
+}
